@@ -416,6 +416,31 @@ ul {
 .project-card:hover {
     transform: translateY(-10px);
     box-shadow: var(--shadow);
+    color: inherit;
+    /* Maintain text color */
+}
+
+.project-footer {
+    margin-top: auto;
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-footer p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.project-footer i {
+    font-size: 1.4rem;
+    color: var(--primary);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-footer i {
+    transform: scale(1.2) rotate(10deg);
 }
 
 .project-card .gradient-card {
