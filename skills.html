@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,42 +9,66 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-<header class="header">
-    <nav class="navbar container">
-        <div class="logo">Lyward<span>.</span></div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="skills.html" class="active">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <button id="theme-toggle"><i class="fas fa-moon"></i></button>
-    </nav>
-</header>
+    <header class="header">
+        <nav class="navbar container">
+            <div class="logo">Lyward<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html" class="active">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+        </nav>
+    </header>
 
-<section class="container hero">
-    <div class="hero-content reveal">
-        <h1>My Skills</h1>
-        <p>Technologies and tools I work with:</p>
+    <section class="container" style="min-height: calc(100vh - 70px); display: flex; align-items: center;">
+        <div class="skills-container reveal">
+            <div class="skills-text">
+                <h1>My Skills</h1>
+                <p>Technologies and tools I work with to build high-quality applications:</p>
 
-        <ul style="margin-top: 1.5rem; line-height: 2;">
-            <li>✔ HTML5, CSS3, JavaScript</li>
-            <li>✔ PHP & MySQL</li>
-            <li>✔ C#</li>
-            <li>✔ Git & GitHub</li>
-        </ul>
-    </div>
-</section>
+                <ul style="margin-top: 2rem; line-height: 2.2; font-size: 1.1rem;">
+                    <li><i class="fas fa-check-circle" style="color: var(--primary); margin-right: 10px;"></i> HTML5,
+                        CSS3, JavaScript</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--primary); margin-right: 10px;"></i> PHP &
+                        MySQL</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--primary); margin-right: 10px;"></i> C# / .NET
+                    </li>
+                    <li><i class="fas fa-check-circle" style="color: var(--primary); margin-right: 10px;"></i> Flutter &
+                        Dart</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--primary); margin-right: 10px;"></i> Git &
+                        GitHub</li>
+                </ul>
+            </div>
 
-<footer class="footer">
-    <div class="container footer-content">
-        <p>© 2026 Lyward C. Maniego</p>
-    </div>
-</footer>
+            <div class="skills-image">
+                <div class="skills-card">
+                    <img src="assets/images/stat.jpg" alt="Skills Statistics">
+                </div>
+                <div class="skills-column">
+                    <div class="skills-card">
+                        <img src="assets/images/stat2.jpg" alt="Skills Statistics 2">
+                    </div>
+                    <div class="skills-card">
+                        <img src="assets/images/admin.png" alt="Admin Dashboard">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script src="assets/js/main.js"></script>
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2026 Lyward C. Maniego</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>

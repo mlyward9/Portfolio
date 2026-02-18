@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,47 +9,70 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-<header class="header">
-    <nav class="navbar container">
-        <div class="logo">Lyward<span>.</span></div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html" class="active">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <button id="theme-toggle"><i class="fas fa-moon"></i></button>
-    </nav>
-</header>
+    <header class="header">
+        <nav class="navbar container">
+            <div class="logo">Lyward<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+        </nav>
+    </header>
 
-<section class="container hero">
-    <div class="hero-content reveal">
-        <h1>Projects</h1>
+    <section class="container" style="padding: 80px 0; min-height: calc(100vh - 70px);">
+        <h1 class="reveal">Projects</h1>
 
-        <div class="gradient-card" style="margin-top:2rem;">
-            <i class="fas fa-list"></i>
+        <div class="projects-grid">
+
+            <!-- Queueing System -->
+            <div class="project-card reveal">
+                <div class="gradient-card">
+                    <img src="assets/images/queue.jpg" alt="Queueing System Screen">
+                </div>
+                <h2>Queueing System</h2>
+                <p>
+                    A web-based queueing system designed to manage client flow,
+                    reduce waiting times, and help administrators monitor queue
+                    performance efficiently.
+                </p>
+                <p style="margin-top: auto; padding-top: 1rem;">
+                    <strong>Tech Stack:</strong> PHP, JavaScript, MySQL, HTML, CSS
+                </p>
+            </div>
+
+            <!-- POS System -->
+            <div class="project-card reveal delay-1">
+                <div class="gradient-card">
+                    <img src="assets/images/pos.png" alt="POS System Screen">
+                </div>
+                <h2>POS System</h2>
+                <p>
+                    A cross-platform, offline-first multi-branch Point of Sale (POS) system.
+                    Features include real-time synchronization, inventory tracking, sales analytics,
+                    and a sleek user interface for efficient transactions.
+                </p>
+                <p style="margin-top: auto; padding-top: 1rem;">
+                    <strong>Tech Stack:</strong> Flutter, Dart, SQLite, Node.js
+                </p>
+            </div>
+
         </div>
+    </section>
 
-        <h2 style="margin-top:1.5rem;">Queueing System</h2>
-        <p>
-            A web-based queueing system designed to manage clients flow,
-            reduce waiting times, and help administrators monitor queue
-            performance efficiently.
-        </p>
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2026 Lyward C. Maniego</p>
+        </div>
+    </footer>
 
-        <p><strong>Tech Stack:</strong> PHP, JavaScript, MySQL, HTML, CSS</p>
-    </div>
-</section>
-
-<footer class="footer">
-    <div class="container footer-content">
-        <p>© 2026 Lyward C. Maniego</p>
-    </div>
-</footer>
-
-<script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
