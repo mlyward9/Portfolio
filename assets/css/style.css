@@ -218,8 +218,8 @@ ul {
    PROFILE IMAGE
 ========================= */
 .profile-card {
-    width: 260px;
-    height: 260px;
+    width: 340px;
+    height: 340px;
     border-radius: 50%;
     padding: 6px;
     background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
@@ -239,8 +239,8 @@ ul {
    ABOUT PAGE PROFILE IMAGE
 ========================= */
 .profile-card-about {
-    width: 200px;
-    height: 200px;
+    width: 260px;
+    height: 260px;
     border-radius: 50%;
     padding: 6px;
     background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
