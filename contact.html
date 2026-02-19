@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,41 +9,75 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-<header class="header">
-    <nav class="navbar container">
-        <div class="logo">Lyward<span>.</span></div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-        <button id="theme-toggle"><i class="fas fa-moon"></i></button>
-    </nav>
-</header>
+    <header class="header">
+        <nav class="navbar container">
+            <div class="logo">Lyward<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+        </nav>
+    </header>
 
-<section class="container hero">
-    <div class="hero-content reveal">
-        <h1>Contact Me</h1>
-        <p>If you'd like to work together or have any questions, feel free to reach out.</p>
+    <section class="container"
+        style="min-height: calc(100vh - 70px); display: flex; align-items: center; justify-content: center;">
+        <div class="contact-container reveal">
 
-        <p style="margin-top:1.5rem;">
-            📧 Email: <strong>maniegolyward9@gmail.com</strong><br>
-            💻 GitHub: <strong>github.com/mlyward9</strong><br>
-            🔗 LinkedIn: <strong>linkedin.com/in/lyward-maniego</strong>
-        </p>
-    </div>
-</section>
+            <div class="contact-info">
+                <h1>Let's <span>Connect</span>.</h1>
+                <p>
+                    Whether you're interested in a collaboration, have a question,
+                    or just want to say hi, feel free to reach out through any of these platforms.
+                </p>
 
-<footer class="footer">
-    <div class="container footer-content">
-        <p>© 2026 Lyward C. Maniego</p>
-    </div>
-</footer>
+                <div class="contact-cards">
+                    <!-- Email -->
+                    <a href="mailto:maniegolyward9@gmail.com" class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-card-content">
+                            <h3>Email Me</h3>
+                            <p>maniegolyward9@gmail.com</p>
+                        </div>
+                    </a>
 
-<script src="assets/js/main.js"></script>
+                    <!-- GitHub -->
+                    <a href="https://github.com/mlyward9" target="_blank" class="contact-card">
+                        <i class="fab fa-github"></i>
+                        <div class="contact-card-content">
+                            <h3>GitHub</h3>
+                            <p>github.com/mlyward9</p>
+                        </div>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/lyward-maniego-335a7a336/" target="_blank"
+                        class="contact-card">
+                        <i class="fab fa-linkedin"></i>
+                        <div class="contact-card-content">
+                            <h3>LinkedIn</h3>
+                            <p>lyward-maniego</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2026 Lyward C. Maniego</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
