@@ -2,15 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Lyward C. Maniego | Web & Mobile Application Developer Portfolio" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Lyward C. Maniego | Software Developer Portfolio - Crafting modern web & mobile applications.">
     <title>Lyward C. Maniego | Portfolio</title>
 
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Outfit & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-    <!-- Icons -->
+    <!-- Icons: FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- Main CSS -->
@@ -25,65 +30,318 @@
             <div class="logo">Lyward<span>.</span></div>
 
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <button id="theme-toggle" aria-label="Toggle theme">
-                <i class="fas fa-moon"></i>
-            </button>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <a href="#contact" class="btn primary hide-on-mobile"
+                    style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">Hire Me</a>
+            </div>
         </nav>
     </header>
 
     <!-- ===== HERO SECTION ===== -->
-    <section class="hero container">
-        <div class="hero-content">
-            <h1 class="reveal">
-                Hi, I'm <span>Lyward C. Maniego</span>
-            </h1>
+    <main>
+        <section id="home" class="hero container">
+            <div class="hero-content">
+                <h1 class="reveal">
+                    Building the <span>Future</span> of Web & Mobile.
+                </h1>
+                <h2 class="reveal" style="transition-delay: 0.1s;">
+                    Hi, I'm Lyward C. Maniego
+                </h2>
+                <p class="reveal" style="transition-delay: 0.2s;">
+                    A Software Programmer specializing in Web & Mobile Application Development.
+                    I transform complex ideas into elegant, high-performance digital solutions.
+                </p>
+                <div class="hero-buttons reveal" style="transition-delay: 0.3s;">
+                    <a href="#projects" class="btn primary">View Work <i class="fas fa-arrow-right"></i></a>
+                    <a href="assets/resume/Lyward Maniego Resume.pdf" class="btn outline" download>
+                        Resume <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
 
-            <h2 class="reveal delay-1">
-                Web & Mobile Application Developer
-            </h2>
+            <div class="hero-image reveal" style="transition-delay: 0.4s;">
+                <div class="profile-container">
+                    <div class="profile-card">
+                        <img src="assets/images/profile.jpg" alt="Lyward C. Maniego">
+                    </div>
+                    <!-- Tech Specs / Floating Badges -->
+                    <div class="floating-badge badge-1">
+                        <i class="fas fa-laptop-code" style="color: var(--primary);"></i>
+                        <div>
+                            <span style="display: block; font-weight: 800; font-size: 0.9rem;">Web & Mobile</span>
+                            <span style="font-size: 0.75rem; opacity: 0.7;">Developer</span>
+                        </div>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fas fa-rocket" style="color: var(--secondary);"></i>
+                        <div>
+                            <span style="display: block; font-weight: 800; font-size: 0.9rem;">Always</span>
+                            <span style="font-size: 0.75rem; opacity: 0.7;">Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <p class="reveal delay-2">
-                I build modern, efficient, and user-friendly web and mobile applications
-                with a strong focus on performance and clean design.
-            </p>
+        <!-- ===== ABOUT SECTION ===== -->
+        <section id="about" class="container">
+            <div class="section-title reveal">
+                <h2>About Me</h2>
+                <p>My journey from code to deployment.</p>
+            </div>
 
-            <div class="hero-buttons reveal delay-3">
-                <a href="projects.html" class="btn primary">View Projects</a>
-                <a href="skills.html#certificates" class="btn outline">View Certificates</a>
-                <a href="assets/resume/Lyward Maniego Resume.pdf" class="btn outline" download>
-                    Download Resume
+            <div class="about-grid">
+                <div class="reveal">
+                    <div class="about-info">
+                        <h3>Problem Solver & Creative Developer</h3>
+                        <p>
+                            I am a Software Programmer with a BS in IT, majoring in Web and Mobile Application
+                            Development.
+                            My approach focuses on building efficient, user-focused applications using modern stacks.
+                        </p>
+                        <p>
+                            I thrive on continuous learning and aim to contribute to impactful projects through clean
+                            code
+                            and thoughtful architecture.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#skills" class="btn outline">My Skills</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal" style="transition-delay: 0.2s;">
+                    <div style="display: flex; flex-direction: column; gap: 2.5rem;">
+                        <div>
+                            <h3 style="font-size: 1.2rem; margin-bottom: 1.5rem;"><i class="fas fa-briefcase"></i>
+                                Experience</h3>
+                            <div class="experience-list">
+                                <div class="timeline-item">
+                                    <span class="date">2025 - Present</span>
+                                    <h4>Government Intern / Programmer</h4>
+                                    <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 0.5rem;">Department of
+                                        Migrant Workers</p>
+                                    <ul>
+                                        <li>Developed real-time queueing system with performance metrics.</li>
+                                        <li>Optimized service flow reducing congestion significantly.</li>
+                                    </ul>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="date">2023 - 2024</span>
+                                    <h4>Web Developer</h4>
+                                    <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 0.5rem;">DILG - Laguna</p>
+                                    <ul>
+                                        <li>Modernized EKP dispute resolution process.</li>
+                                        <li>Implemented offline data synchronization mechanisms.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 style="font-size: 1.2rem; margin-bottom: 1.5rem;"><i class="fas fa-graduation-cap"></i>
+                                Education</h3>
+                            <div class="education-list">
+                                <div class="timeline-item">
+                                    <span class="date">2021 - 2025</span>
+                                    <h4>BS in Information Technology</h4>
+                                    <p style="font-size: 0.9rem; opacity: 0.7;">Laguna State Polytechnic University</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SKILLS SECTION ===== -->
+        <section id="skills" class="container">
+            <div class="section-title reveal">
+                <h2>Tech Stack</h2>
+                <p>The tools and technologies I use to bring ideas to life.</p>
+            </div>
+
+            <div class="skills-wrapper">
+                <div class="skills-badges reveal">
+                    <div class="skill-badge"><i class="fab fa-html5" style="color: #e34c26;"></i> HTML5</div>
+                    <div class="skill-badge"><i class="fab fa-css3-alt" style="color: #264de4;"></i> CSS3</div>
+                    <div class="skill-badge"><i class="fab fa-js" style="color: #f7df1e;"></i> JavaScript</div>
+                    <div class="skill-badge"><i class="fab fa-php" style="color: #777bb4;"></i> PHP</div>
+                    <div class="skill-badge"><i class="fas fa-database" style="color: #00758f;"></i> MySQL</div>
+                    <div class="skill-badge"><i class="fab fa-microsoft" style="color: #00a4ef;"></i> C# / .NET</div>
+                    <div class="skill-badge"><i class="fas fa-mobile-alt" style="color: #02569b;"></i> Flutter</div>
+                    <div class="skill-badge"><i class="fab fa-node-js" style="color: #339933;"></i> Node.js</div>
+                    <div class="skill-badge"><i class="fab fa-git-alt" style="color: #f05032;"></i> Git</div>
+                </div>
+
+                <div class="skills-visual reveal" style="transition-delay: 0.2s;">
+                    <div class="skills-card">
+                        <img src="assets/images/stat.jpg" alt="Statistics">
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div class="skills-card">
+                            <img src="assets/images/stat2.jpg" alt="Analytics">
+                        </div>
+                        <div class="skills-card">
+                            <img src="assets/images/admin.png" alt="Admin Dashboard">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROJECTS SECTION ===== -->
+        <section id="projects" class="container">
+            <div class="section-title reveal">
+                <h2>Selected Projects</h2>
+                <p>A showcase of some of my best work.</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Queueing System -->
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <img src="assets/images/queue.jpg" alt="Queueing System">
+                    </div>
+                    <div class="project-content">
+                        <h3>DMW Queueing System</h3>
+                        <p>Web-based system managing client flow with real-time performance tracking.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">JS</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                        <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+                            <a href="https://github.com/mlyward9/dmw-q" target="_blank" class="btn primary"
+                                style="padding: 0.6rem 1rem; font-size: 0.85rem;"><i class="fab fa-github"></i>
+                                Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- POS System -->
+                <div class="project-card reveal" style="transition-delay: 0.1s;">
+                    <div class="project-img">
+                        <img src="assets/images/pos.png" alt="POS System">
+                    </div>
+                    <div class="project-content">
+                        <h3>POS System</h3>
+                        <p>Point of Sale (POS) system with real-time sync and inventory analytics.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                        <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+                            <a href="https://github.com/mlyward9/POS-system" target="_blank" class="btn primary"
+                                style="padding: 0.6rem 1rem; font-size: 0.85rem;"><i class="fab fa-github"></i>
+                                Source</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal" style="text-align: center; margin-top: 4rem;">
+                <a href="https://github.com/mlyward9" target="_blank" class="btn outline">
+                    See More on GitHub <i class="fab fa-github"></i>
                 </a>
             </div>
-        </div>
+        </section>
 
-        <div class="hero-image reveal delay-2">
-            <div class="profile-card">
-                <img src="assets/images/profile.jpg" alt="Lyward C. Maniego">
+        <!-- ===== CERTIFICATES SECTION ===== -->
+        <section id="certificates" class="container">
+            <div class="section-title reveal">
+                <h2>Certifications</h2>
+                <p>Professional credentials and verified achievements.</p>
             </div>
-        </div>
-    </section>
+
+            <div class="projects-grid">
+                <!-- Cybersecurity Certificate -->
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <img src="assets/images/cybersecurity_certificate.jpg" alt="Cybersecurity">
+                    </div>
+                    <div class="project-content">
+                        <h3>Cybersecurity Foundations</h3>
+                        <p>Professional certification from Google focusing on security fundamentals.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Security</span>
+                            <span class="tech-tag">Network</span>
+                        </div>
+                        <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+                            <a href="assets/certificates/Coursera DVUWNCXZXIJV.pdf" target="_blank" class="btn outline"
+                                style="padding: 0.6rem 1rem; font-size: 0.85rem;"><i class="fas fa-certificate"></i>
+                                View Cert</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT SECTION ===== -->
+        <section id="contact" class="container">
+            <div class="section-title reveal">
+                <h2>Let's Connect</h2>
+                <p>Have a project in mind? Let's talk about it.</p>
+            </div>
+
+            <div class="contact-wrapper reveal">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span
+                                style="font-size: 0.8rem; opacity: 0.6; display: block; text-transform: uppercase;">Email
+                                Me</span>
+                            <p style="font-weight: 700;">maniegolyward9@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <span
+                                style="font-size: 0.8rem; opacity: 0.6; display: block; text-transform: uppercase;">LinkedIn</span>
+                            <p style="font-weight: 700;">lyward-maniego</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <span
+                                style="font-size: 0.8rem; opacity: 0.6; display: block; text-transform: uppercase;">GitHub</span>
+                            <p style="font-weight: 700;">@mlyward9</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- ===== FOOTER ===== -->
-    <footer class="footer">
-        <div class="container footer-content">
-            <p>© 2026 Lyward C. Maniego. All rights reserved.</p>
-
-            <div class="social-links">
-                <a href="https://github.com/mlyward9" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/lyward-maniego-335a7a336/" aria-label="LinkedIn"><i
-                        class="fab fa-linkedin"></i></a>
-                <a href="contact.html" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
+    <footer class="footer container">
+        <div class="footer-social">
+            <a href="https://github.com/mlyward9" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/lyward-maniego-335a7a336/" aria-label="LinkedIn"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="mailto:maniegolyward9@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
+        <p>© 2026 Lyward C. Maniego. All rights reserved.</p>
+        <p style="font-size: 0.8rem; opacity: 0.5; margin-top: 0.5rem;">Coded with ❤️ and modern tech.</p>
     </footer>
 
     <!-- Main JS -->
